@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Edit
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card class="welcome-card">
+      <ion-img src="/assets/shapes.svg"></ion-img>
+      <ion-card-header>
+<!--         <ion-card-subtitle>Get Started</ion-card-subtitle>
+ -->        <ion-card-title text-center>Welcome to Ionic edit</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>Now that your app has been created, you'll want to start building out features and components. Check out some of the resources below for next steps.</p>
+      </ion-card-content>
+    </ion-card>
+    
+
+<ion-card class="welcome-card">
+      <!-- <ion-img src="/assets/shapes.svg"></ion-img> -->
+      <ion-card-header>
+        <ion-card-subtitle text-center>Some Details</ion-card-subtitle>
+<!--         <ion-card-title>Welcome to Ionic Demo</ion-card-title>
+ -->      </ion-card-header>
+      <ion-card-content>
+        <ion-input placeholder="Enter Name" [(ngModel)]="fname"></ion-input>
+        <ion-input placeholder="Enter last name" [(ngModel)]="lname"></ion-input>
+      </ion-card-content>
+	  <ion-button (click)="submit()">Submit</ion-button>
+    </ion-card>
+    
+</ion-content>

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'ArialNovaCondLight';
+    src: url('fonts/ArialNovaCondLight.eot');
+    src: url('fonts/ArialNovaCondLight.eot') format('embedded-opentype'),
+         url('fonts/ArialNovaCondLight.woff2') format('woff2'),
+         url('fonts/ArialNovaCondLight.woff') format('woff'),
+         url('fonts/ArialNovaCondLight.ttf') format('truetype'),
+         url('fonts/ArialNovaCondLight.svg#ArialNovaCondLight') format('svg');
+}

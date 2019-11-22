@@ -1,0 +1,237 @@
+.welcome-card ion-img {
+  max-height: 35vh;
+  overflow: hidden;
+}
+//page-registration {
+  .toolbar-title-md {
+    color: #ff5400 !important;
+    font-size: 1.5rem !important;
+    padding: 0 !important;
+  }
+
+  .back-button.show-back-button {
+    color: #ff5400;
+  }
+
+  .scroll-content {
+    margin: auto;
+    width: 100%;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .head_area {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.75);
+    box-sizing: border-box;
+    padding: 3px 10px;
+  }
+
+  .head_area:before,
+  .head_area:after {
+    content: "";
+    display: table;
+  }
+
+  .head_area:after {
+    clear: both;
+  }
+
+  .head_area ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .head_area ul.two {
+    float: right;
+  }
+
+  .head_area ul li {
+    float: left;
+    width: 12px;
+    margin-left: 7px;
+  }
+
+  .head_area ul.one li {
+    float: left;
+    width: 12px;
+    margin-left: 0;
+  }
+
+  .head_area ul li img {
+    width: 100%;
+  }
+
+  .head_area ul li img.charging {
+    width: 9px;
+  }
+
+  .loginbox {
+    background-color: rgb(255, 32, 32);
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    font-family: 'Avenir_95_Black';
+    font-size: 14px;
+    color: #FFFFFF;
+    padding: 6px 10px;
+    box-sizing: border-box;
+  }
+
+  .loginarea {
+    display: block;
+    max-width: 80%;
+    width: 100%;
+    margin: 20px auto 0 auto;
+    text-align: center;
+  }
+
+  .iconbox {
+    text-align: center;
+    max-width: 60px;
+    background: #fb6a6a;
+    box-sizing: border-box;
+    padding: 14px;
+    border-radius: 50%;
+    height: 60px;
+    position: relative;
+    margin: auto;
+  }
+
+  .iconbox::after {
+    content: "";
+    position: absolute;
+    left: -4px;
+    top: -4px;
+    border: 2px solid rgb(255, 32, 32);
+    z-index: 91;
+    width: 106%;
+    height: 106%;
+    border-radius: 50%;
+  }
+
+
+  .iconbox img {
+    width: 100%;
+    opacity: 0.7;
+  }
+
+  .formarea {
+    margin-top: 20px;
+  }
+
+  .formarea .input-group {
+    margin-bottom: 10px;
+  }
+
+  .form-control {
+    width: 100%;
+    height: 33px;
+    background-color: transparent;
+    border: 1px solid rgb(255, 32, 32);
+    color: #FFFFFF;
+    padding: 0 15px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    color: rgb(255, 32, 32);
+    // text-transform: capitalize;
+  }
+
+  select.form-control {
+    appearance: none;
+    color: rgb(255, 32, 32);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    //background-image: url(../assets/imgs/down-arrow.png);
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+  }
+
+  .btn {
+    width: 100%;
+    display: block;
+    margin: 30px 0 0 0;
+    border: 1px solid rgb(255, 32, 32);
+    box-sizing: border-box;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 40px;
+    cursor: pointer;
+    background: rgb(255, 32, 32);
+    font-family: 'Avenir_95_Black';
+  }
+
+  .form-control::-moz-placeholder {
+    color: #f59595;
+    text-transform: capitalize;
+  }
+
+  .form-control:-ms-input-placeholder {
+    color: #f59595;
+    text-transform: capitalize;
+  }
+
+  .form-control::-webkit-input-placeholder {
+    color: #f59595;
+    text-transform: capitalize;
+  }
+
+  .input-group a {
+    color: rgb(255, 32, 32);
+    text-decoration: underline !important;
+  }
+//}
+ion-alert.popup {
+  text-align: center;
+  .alert-wrapper{
+    border-radius: 7px;
+  }
+  .alert-title{
+      margin: auto;
+  }
+  .alert-input-wrapper input{
+      height: 50px;
+      border: 1px solid #bfb7b7;
+      border-radius: 8px;
+      padding: 0 10px;
+      &:focus {
+          margin-bottom: 5px;
+          border-bottom: 1px solid #d3cfcf;
+      }
+  }
+  .alert-button-group{
+      text-align: center;
+      padding: 8px 15px 20px 20px;
+      button{
+          background: rgb(255, 32, 32);
+          color: #fff;
+          text-transform: capitalize;
+          padding: 7px 24px;
+          font-size: 15px;
+          margin: auto;
+          border-radius: 8px;
+      }
+  }
+
+  .alert-input-group{
+      padding: 0 18px 8px 18px;
+  }
+  .alert-message{
+    padding: 0 0 5px 0;
+    font-size: 15px;
+    color: #000;
+  }
+  .alert-head{
+    text-align: center;
+  }
+}

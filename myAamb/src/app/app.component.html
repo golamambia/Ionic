@@ -1,0 +1,40 @@
+<style type="text/css">
+	.man_css{
+		width: 83%;
+    float: right;
+    text-align: left;
+    margin: 15px 0px;
+    padding: 0px 10px;
+    font-size: 17px;
+    font-weight: 600;
+}
+.font_css{
+	font-size: 50px;
+}
+</style>
+
+<ion-app>
+  <ion-split-pane>
+    <ion-menu>
+      <ion-header>
+        <ion-toolbar>
+        	<ion-icon class="font_css" ios="ios-contact" md="md-contact"></ion-icon>
+          <ion-title class="man_css">Menu</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <ion-list>
+          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
+            <ion-item [routerDirection]="'root'" [routerLink]="[p.url]">
+              <ion-icon slot="start" [name]="p.icon"></ion-icon>
+              <ion-label>
+                {{p.title}}
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet main></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>

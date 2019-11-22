@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Demo
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card class="welcome-card">
+      <ion-img src="/assets/shapes.svg"></ion-img>
+      <ion-card-header>
+<!--         <ion-card-subtitle>Get Started</ion-card-subtitle>
+ -->        <ion-card-title text-center>Welcome to Ionic</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>Now that your app has been created, you'll want to start building out features and components. Check out some of the resources below for next steps.</p>
+      </ion-card-content>
+    </ion-card>
+    
+
+<ion-card class="welcome-card">
+      <!-- <ion-img src="/assets/shapes.svg"></ion-img> -->
+      <ion-card-header>
+        <ion-card-subtitle text-center>Some Details</ion-card-subtitle>
+<!--         <ion-card-title>Welcome to Ionic Demo</ion-card-title>
+ -->      </ion-card-header>
+      <ion-card-content>
+        <ion-input class="input_mn" placeholder="Enter Name" [(ngModel)]="fname"></ion-input>
+        <ion-input class="input_mn" placeholder="Enter last name" [(ngModel)]="lname"></ion-input>
+      </ion-card-content>
+	  <ion-button class="btn_center" (click)="submit()">Submit</ion-button>
+    </ion-card>
+    <ion-card class="welcome-card">
+    <ion-card-header>
+        <ion-card-subtitle text-center>Showing Details</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+    <ion-grid>
+  <ion-row>
+    <ion-col>
+      Fname
+    </ion-col>
+    <ion-col col-8>
+      Lname
+    </ion-col>
+    <ion-col>
+      Action
+    </ion-col>
+  </ion-row>
+
+  <ion-row *ngFor="let data of datas">
+    <ion-col>
+      {{data.first_name}}
+    </ion-col>
+    <ion-col col-8>
+      {{data.last_name}}
+    </ion-col>
+    <ion-col>
+      <ion-button (click)="edit(data.id)">Edit</ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button (click)="delete(data.id)">Del</ion-button>
+    </ion-col>
+  </ion-row>
+  
+</ion-grid>
+</ion-card-content>
+    </ion-card>
+</ion-content>

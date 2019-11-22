@@ -1,0 +1,75 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Demo
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card class="welcome-card">
+      <ion-img src="/assets/shapes.svg"></ion-img>
+      <ion-card-header>
+        <ion-card-subtitle>Get Started</ion-card-subtitle>
+        <ion-card-title>Welcome to Ionic Demo</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>Now that your app has been created, you'll want to start building out features and components. Check out some of the resources below for next steps.</p>
+      </ion-card-content>
+    </ion-card>
+    
+	
+
+<ion-item>
+  <ion-label position="floating">Floating Label</ion-label>
+  <ion-input type="number" [(ngModel)]="fname"></ion-input>
+  
+</ion-item>
+
+<ion-item>
+  <ion-label position="floating">Floating Label2</ion-label>
+  <ion-input type="number" [(ngModel)]="lname"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label position="floating">Result</ion-label>
+  <ion-input type="number" [(ngModel)]="sum"></ion-input>
+</ion-item>
+
+<ion-button color="primary" (click)="submit()">Primary</ion-button>
+
+
+
+ <div class="loginarea">
+    <div class="iconbox">
+      <img src="/assets/shapes.svg" alt="">
+    </div>
+    <form  (ngSubmit)="register(signupForm.value)" novalidate>
+      <div class="formarea">
+        <div class="input-group">
+          <input type="text" class="form-control"   placeholder="Full Name">
+        </div>
+        <div class="input-group">
+          <input type="email" class="form-control" autocapitalize=“off”  placeholder="Email Id">
+        </div>
+        <div class="input-group">
+          <input type="number" class="form-control"  placeholder="Mobile Number">
+        </div>
+        <div class="input-group">
+          <input type="text" class="form-control"  placeholder="Full Address">
+        </div>
+        <div class="input-group">
+          <input type="password" class="form-control"  placeholder="Enter Password">
+        </div>
+        <div class="input-group">
+          <input type="password" class="form-control"  placeholder="Re-Enter Password">
+        </div>
+        <div class="input-group">
+          <button type="submit"  class="btn">Register</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</ion-content>
